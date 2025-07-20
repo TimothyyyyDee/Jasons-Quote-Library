@@ -10,20 +10,45 @@
       background-color: black;
       color: white;
       height: 100vh;
+      font-family: 'EB Garamond', serif;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      font-family: 'EB Garamond', serif;
     }
 
     h1 {
       font-size: 3em;
       text-align: center;
       letter-spacing: 1px;
+      margin-bottom: 40px;
+    }
+
+    .next-button {
+      padding: 12px 30px;
+      background-color: red;
+      color: white;
+      border: none;
+      font-size: 1rem;
+      font-family: 'EB Garamond', serif;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .next-button:hover {
+      background-color: darkred;
+    }
+
+    a {
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <h1>Jason's Quote Library</h1>
+  <a href="quote1.html">
+    <button class="next-button">Next</button>
+  </a>
 </body>
 </html>
